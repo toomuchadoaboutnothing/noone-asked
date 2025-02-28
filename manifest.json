@@ -17,5 +17,5 @@
     "service_worker": "service-worker.js"
     //Declare service worker as an ES module
     "type": "module"
-  }
+  },
 }
