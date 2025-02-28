@@ -12,7 +12,16 @@
       "128": "images/logo-128x128.png"
     }
   },
+  "permissions": ["activeTab", "scripting", "storage"],
   "background": {
-    "service_worker": "service-worker.js"
-  }
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*", "*://*.twitter.com/*", "*://*.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "options_page": "options.html"
 }
