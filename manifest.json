@@ -5,6 +5,6 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "extension-popup.html",
-    "default_icon": "noone-asked.png"
+    "default_icon": "noone-asked-logo.png"
   }
 }
