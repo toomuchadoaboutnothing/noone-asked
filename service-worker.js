@@ -1,5 +1,3 @@
-// service-worker.js
-
 // This event runs when the service worker is installed
 self.addEventListener('install', (event) => {
     console.log('Service Worker: Installed');
