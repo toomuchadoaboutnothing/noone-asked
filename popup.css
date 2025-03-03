@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc; /* Light background color */
-    color: #333; /* Dark text color */
+    background-color: #fAf2f2; /* Light background color */
+    color: #7d5a5a; /* Dark text color */
     margin: 0;
     padding: 20px;
     width: 250px; /* Adjust width as needed */
@@ -16,7 +16,7 @@ body {
 h2 {
     font-size: 1.5em; /* Larger heading */
     margin-bottom: 15px; /* Space below heading */
-    color: #4a90e2; /* Accent color for the heading */
+    color: #7d5a5a; /* Accent color for the heading */
 }
 
 .toggle-label {
@@ -31,7 +31,7 @@ input[type="checkbox"] {
 }
 
 .btn {
-    background-color: #4a90e2; /* Button color */
+    background-color: #f3e1e1; /* Button color */
     color: white; /* Button text color */
     border: none;
     border-radius: 5px; /* Rounded button corners */
@@ -41,5 +41,5 @@ input[type="checkbox"] {
 }
 
 .btn:hover {
-    background-color: #357ab8; /* Darker shade on hover */
+    background-color: #f1d1d1; /* Darker shade on hover */
 }
