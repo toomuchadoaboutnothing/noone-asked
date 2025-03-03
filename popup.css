@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Light background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 20px;
+    width: 250px; /* Adjust width as needed */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.container {
+    text-align: center; /* Center text */
+}
+
+h2 {
+    font-size: 1.5em; /* Larger heading */
+    margin-bottom: 15px; /* Space below heading */
+    color: #4a90e2; /* Accent color for the heading */
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align label */
+    margin-bottom: 15px; /* Space below toggle */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+.btn {
+    background-color: #4a90e2; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #357ab8; /* Darker shade on hover */
+}
