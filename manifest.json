@@ -4,6 +4,12 @@
   "version": "1.0",
   "description": "Blocks offensive comments on social media.",
   "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": {
+      "script": "service-worker.js",
+      "type": "module"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://*/*"], 
