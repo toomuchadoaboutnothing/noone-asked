@@ -3,34 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positive Comments</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 10px;
-            width: 200px;
-        }
-        label {
-            display: flex;
-            align-items: center;
-        }
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        button {
-            margin-top: 10px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Noone Asked</title>
+    <link rel="stylesheet" href="popup.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <h2>Positive Comments</h2>
-    <label>
-        <input type="checkbox" id="toggleExtension">
-        Enable Extension
-    </label>
-    <button id="optionsButton">Options</button>
+    <div class="container">
+        <h2>Noone Asked</h2>
+        <label class="toggle-label">
+            <input type="checkbox" id="toggleExtension">
+            Block the hate!
+        </label>
+        <button id="optionsButton" class="btn">Options</button>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>
