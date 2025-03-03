@@ -4,8 +4,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc; /* Light background color */
-    color: #333; /* Dark text color */
+    background-color: #fAf2f2; /* Light background color */
+    color: #7d5a5a; /* Dark text color */
     margin: 0;
     padding: 20px; /* Padding for the body */
     height: 100vh; /* Full viewport height */
@@ -24,7 +24,7 @@ body {
 h1 {
     font-size: 2em; /* Larger heading */
     margin-bottom: 20px; /* Space below heading */
-    color: #4a90e2; /* Accent color for the heading */
+    color: #7d5a5a; /* Accent color for the heading */
 }
 
 h2 {
@@ -47,7 +47,7 @@ textarea {
 }
 
 .btn {
-    background-color: #4a90e2; /* Button color */
+    background-color: #f3e1e1; /* Button color */
     color: white; /* Button text color */
     border: none;
     border-radius: 5px; /* Rounded button corners */
@@ -57,12 +57,12 @@ textarea {
 }
 
 .btn:hover {
-    background-color: #357ab8; /* Darker shade on hover */
+    background-color: #f1d1d1; /* Darker shade on hover */
 }
 
 .footer {
     margin-top: 20px; /* Space above footer */
     text-align: center; /* Center align footer text */
     font-size: 0.9em; /* Smaller font size for footer */
-    color: #777; /* Lighter color for footer text */
+    color: #7d5a5a; /* Lighter color for footer text */
 }
