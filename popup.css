@@ -32,7 +32,7 @@ input[type="checkbox"] {
 
 .btn {
     background-color: #f3e1e1; /* Button color */
-    color: white; /* Button text color */
+    color: #7d5a5a; /* Button text color */
     border: none;
     border-radius: 5px; /* Rounded button corners */
     padding: 10px 15px; /* Button padding */
