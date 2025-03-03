@@ -42,8 +42,8 @@ function addPositiveOverlay(comment) {
     const profilePic = comment.querySelector('.profile-pic'); // Modify selector for the profile picture
     if (profilePic) {
         const overlay = document.createElement('div');
-        overlay.className = 'positive-overlay';
-        overlay.style.backgroundImage = "url('path_to_positive_image.png')"; // Path to your overlay image
+        overlay.className = 'coquette-overlay';
+        overlay.style.backgroundImage = "url('logo-48x48.png')"; // Path to your overlay image
         overlay.style.position = 'absolute';
         overlay.style.width = '100%';
         overlay.style.height = '100%';
