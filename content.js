@@ -1,6 +1,6 @@
-let offensiveWords = [];
+let offensiveWords = ['faggot','fat','cringe','ok but what were you wearing','put some clothes on','spinster','OF','tranny','nigga','your body my choice', 'go back to the kitchen','victim mentality','delusional','hysteria','noone cares','hysterical','deserved','deserve'];
 const positivePhrases = [
-    "Great job!",
+    "Queen",
     "Keep up the good work!",
     "You're awesome!",
     "What a positive perspective!"
