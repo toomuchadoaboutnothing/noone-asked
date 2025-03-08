@@ -1,55 +1,23 @@
-let offensiveWords = ['faggot','fat','cringe','ok but what were you wearing','put some clothes on','spinster','OF','tranny','nigga','your body my choice', 'go back to the kitchen','victim mentality','delusional','hysteria','noone cares','hysterical','deserved','deserve'];
-const positivePhrases = [
-    "Queen",
-    "Keep up the good work!",
-    "You're awesome!",
-    "What a positive perspective!"
-];
+// content.js
 
-function loadOffensiveWords() {
-    chrome.storage.sync.get('offensiveWords', (data) => {
-        offensiveWords = data.offensiveWords || [];
-        replaceOffensiveComments(); // Initial run to replace comments
+// List of offensive keywords (NOTE: UPDATE LATER!!!!)
+const offensiveKeywords = ['go back to the kitchen','whys there no hate','victim mentality','delusional','hysteria','noone cares','hysterical','deserved','fat','cringe','what were you wearing','put some clothes on','spinster','opinion rejected','OF','Onlyfans detected, opinion rejected''tranny','nigga','your body my choice','still murder','faggot'];;
+
+// Function to hide comments and profile pictures
+function hideOffensiveComments() {
+    const comments = document.querySelectorAll('_a9ym'); // Update this selector to match the comment elements
+    comments.forEach(comment => {
+        const text = comment.innerText.toLowerCase();
+        // Check if the comment contains any offensive keywords
+        if (offensiveKeywords.some(keyword => text.includes(keyword.toLowerCase()))) {
+            comment.style.display = 'none'; // Hide the comment
+        }
     });
 }
 
-function isExtensionEnabled(callback) {
-    chrome.storage.sync.get('extensionEnabled', (data) => {
-        callback(data.extensionEnabled !== false); // Default to true if not set
-    });
-}
+// Run the function to hide offensive comments
+hideOffensiveComments();
 
-function replaceOffensiveComments() {
-    isExtensionEnabled((enabled) => {
-        if (!enabled) return; // Exit if the extension is disabled
-
-        const comments = document.querySelectorAll('.comment'); // Modify selector based on the social media site
-        comments.forEach(comment => {
-            const text = comment.innerText;
-            offensiveWords.forEach(word => {
-                if (text.includes(word)) {
-                    comment.innerText = positivePhrases[Math.floor(Math.random() * positivePhrases.length)];
-                    const likeButton = comment.querySelector('.like-button'); // Modify selector as needed
-                    if (likeButton) likeButton.style.display = 'none';
-                    addPositiveOverlay(comment);
-                }
-            });
-        });
-    });
-}
-
-function addPositiveOverlay(comment) {
-    const profilePic = comment.querySelector('.profile-pic'); // Modify selector for the profile picture
-    if (profilePic) {
-        const overlay = document.createElement('div');
-        overlay.className = 'coquette-overlay';
-        overlay.style.backgroundImage = "url('logo-48x48.png')"; // Path to your overlay image
-        overlay.style.position = 'absolute';
-        overlay.style.width = '100%';
-        overlay.style.height = '100%';
-        profilePic.appendChild(overlay);
-    }
-}
-
-setInterval(replaceOffensiveComments, 3000); // Check every 3 seconds
-loadOffensiveWords(); // Load offensive words on script load
+// Optionally, you can also add a MutationObserver to handle dynamic content
+const observer = new MutationObserver(hideOffensiveComments);
+observer.observe(document.body, { childList: true, subtree: true });
