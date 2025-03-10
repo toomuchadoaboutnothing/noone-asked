@@ -1,7 +1,7 @@
 // content.js
 
 // List of offensive keywords (NOTE: UPDATE LATER!!!!)
-let offensiveKeywords = ['go back to the kitchen','whys there no hate','victim mentality','delusional','hysteria','noone cares','hysterical','deserved','fat','cringe','what were you wearing','put some clothes on','spinster','opinion rejected','OF','Onlyfans detected, opinion rejected''tranny','nigga','your body my choice','still murder','faggot'];;
+const offensiveKeywords = ['go back to the kitchen','whys there no hate','victim mentality','delusional','hysteria','noone cares','hysterical','deserved','fat','cringe','what were you wearing','put some clothes on','spinster','opinion rejected','OF','Onlyfans detected, opinion rejected''tranny','nigga','your body my choice','still murder','faggot'];;
 
 // Function to hide comments and profile pictures
 function hideOffensiveComments() {
