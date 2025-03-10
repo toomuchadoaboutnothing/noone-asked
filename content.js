@@ -18,6 +18,6 @@ function hideOffensiveComments() {
 // Run the function to hide offensive comments
 hideOffensiveComments();
 
-// Optionally, you can also add a MutationObserver to handle dynamic content
+// MutationObserver to handle dynamic content
 const observer = new MutationObserver(hideOffensiveComments);
 observer.observe(document.body, { childList: true, subtree: true });
