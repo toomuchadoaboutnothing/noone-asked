@@ -14,9 +14,7 @@
       "css": ["styles.css"]
     }
   ],
-  "options_page": "options.html",
  "action": {
-  "default_popup": "popup.html",
   "default_icon": {
     "16": "logo-16x16.png",
     "48": "logo-48x48.png",
